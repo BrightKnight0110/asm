@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="356dp"
+        android:layout_height="131dp"
+        app:srcCompat="@drawable/gameover" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Your score is: 0"
+        android:textColor="@color/light_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name to save your score: "
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#528AAE" />
+
+</LinearLayout>
